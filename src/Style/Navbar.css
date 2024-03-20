@@ -67,18 +67,18 @@ nav.sticky{
     font-weight: bold;
     color: #ffffff;
 }
-.nav-content li a::before {
+.nav-content li:not(.disable-login) a::before {
     content: '';
     position: absolute;
-    bottom: -10px; /* Set Underline distance from text */
+    bottom: -10px; 
     left: 0;
     width: 0%;
-    height: 2px; /* Underline thickness */
+    height: 2px; 
     background-color: var(--secondary); 
-    transition:  0.5s ease; /* Underline movement transitions */
+    transition:  0.5s ease; 
 }
-.nav-content li a.active::before, .nav-content li a:hover::before {
-    width: 100%; /* Panjang underline saat hover */
+.nav-content li:not(.disable-login) a.active::before, .nav-content li:not(.disable-login) a:hover::before {
+    width: 100%; 
 }
 
 .auth a{
@@ -113,8 +113,50 @@ nav.sticky{
     .auth, #menu-list{
         display: none;
     }
+    .disable-login{
+        display: inline-block;
+        padding-inline: 20px;
+        padding-block: 10px;
+        background: var(--secondary);
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffffff;
+        transition: background .5s;
+    }
     .menu-open {
         display: block;
         color: #ffffff;
+        font-size: 20px;
+    }
+
+    .nav-content #menu-list{
+        position: fixed;
+        z-index: 99;
+        top: 82px;
+        width: 100%;
+        left: -100%;
+        height: 55%;
+        padding-inline: 20px;
+        text-align: center;
+        background: #14181f;
+        display: flex;
+        flex-direction: column;
+        transition: left 0.3s ease;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .nav-content #menu-list.active{
+        left: 0px;
+    }
+    .nav-content .menu-open.hide{
+        display: none;
+    }
+    .nav-content .close-menu.show{
+        display: block;
+        color: #ffffff;
+        font-size: 20px;
     }
 }
