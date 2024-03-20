@@ -67,7 +67,7 @@ nav.sticky{
     font-weight: bold;
     color: #ffffff;
 }
-.nav-content li:not(.disable-login) a::before {
+.nav-content #menu-list a::before {
     content: '';
     position: absolute;
     bottom: -10px; 
@@ -77,7 +77,7 @@ nav.sticky{
     background-color: var(--secondary); 
     transition:  0.5s ease; 
 }
-.nav-content li:not(.disable-login) a.active::before, .nav-content li:not(.disable-login) a:hover::before {
+.nav-content #menu-list a:hover::before {
     width: 100%; 
 }
 
@@ -113,6 +113,16 @@ nav.sticky{
     .auth, #menu-list{
         display: none;
     }
+    .disable-login {
+        pointer-events: none; 
+        cursor: default;
+        text-decoration: none; 
+        color: inherit; 
+    }
+    .disable-login:hover {
+        color: inherit; 
+    }
+    
     .disable-login{
         display: inline-block;
         padding-inline: 20px;
@@ -129,7 +139,6 @@ nav.sticky{
         color: #ffffff;
         font-size: 20px;
     }
-
     .nav-content #menu-list{
         position: fixed;
         z-index: 99;
