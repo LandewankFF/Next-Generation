@@ -151,7 +151,7 @@ nav.sticky{
     .nav-content #menu-list{
         position: fixed;
         z-index: 99;
-        top: 82px;
+        top: 75px;
         width: 100%;
         left: -100%;
         height: 55%;
@@ -160,7 +160,7 @@ nav.sticky{
         background: #14181f;
         display: flex;
         flex-direction: column;
-        transition: left 0.3s ease;
+        transition: left 0.5s ease;
         gap: 30px;
         justify-content: center;
         align-items: center;
