@@ -48,7 +48,7 @@ nav {
     left: 0;
     top: 0;
     width: 100%;
-    padding-inline: 80px;
+    padding-inline: 50px;
     padding-block: 10px;
     transition: background-color 0.3s ease;
 }
@@ -113,17 +113,11 @@ nav.sticky{
 
 
 /* Responsive Navigation Bar */
-@media screen and (max-width: 1024px){
-    nav{
-        padding-inline: 50px;
-        padding-block: 20px;
-    }
-}
 
 @media screen and (max-width: 768px){
     nav{
         padding-inline: 20px;
-        padding-block: 20px;
+        padding-block: 10px;
     }
     .auth, #menu-list{
         display: none;
