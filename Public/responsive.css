@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px){
+    .container{
+        padding-inline: 50px;
+    }
+    .about{
+        flex-direction: column;
+        height: auto;
+    }
+    .news{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .title h1{
+        width: 70%;
+        font-size: var(--font-size-h2);
+    }
+    .title p{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .container{
+        padding-inline: 30px;
+    }
+    .news{
+        justify-content: center;
+    }
+}
