@@ -1,2 +1,5 @@
-// const EmailInput = document.getElementById('email')
-// const 
+const EmailInput = document.getElementById('email')
+const Passwordlogin = document.getElementById('password-field')
+const CreateEmail = document.getElementById('Create-Email')
+const CreatePassword = document.getElementById('Create-password')
+const ConfirmPassword = document.getElementById('Confirm-password')
