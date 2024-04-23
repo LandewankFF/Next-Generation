@@ -45,7 +45,6 @@ footer {
     padding-block: 50px;
     background-color: var(--third);
     margin-top: 50px;
-    flex-direction: column;
 }
 
 /* giving color font */
@@ -205,6 +204,7 @@ footer {
         justify-content: center;
         text-align: center;
         padding: 20px;
+        flex-direction: column;
     }
     /* .footer-col{
         width: 100%;
